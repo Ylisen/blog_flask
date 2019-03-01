@@ -34,30 +34,30 @@ Werkzeug==0.12.2
 WTForms==2.1
 
 #### 四、文件目录
-myapp 
-├── forms.py 
-├── init.py 
-├── models.py 
-├── static 
-│ ├── css 
-│ │ ├── bootstrap.min.css 
-│ │ └── bootstrap-responsive.min.css 
-│ └── js 
-│ └── bootstrap.min.js 
-├── templates 
-│ ├── base.html 
-│ ├── change.html 
-│ ├── detail.html 
-│ ├── edit.html 
-│ ├── flash.html 
-│ ├── index.html 
-│ ├── login.html 
-│ ├── manage.html 
-│ ├── sign_up.html 
-│ ├── user.html 
-│ └── write.html 
-└── views.py
-
+myapp    
+├── forms.py      
+├── init.py    
+├── models.py    
+├── static    
+│ ├── css     
+│ │ ├── bootstrap.min.css    
+│ │ └── bootstrap-responsive.min.css    
+│ └── js    
+│ └── bootstrap.min.js    
+├── templates    
+│ ├── base.html    
+│ ├── change.html    
+│ ├── detail.html    
+│ ├── edit.html    
+│ ├── flash.html    
+│ ├── index.html    
+│ ├── login.html    
+│ ├── manage.html     
+│ ├── sign_up.html     
+│ ├── user.html    
+│ └── write.html    
+└── views.py   
+ 
 ## 四、功能演示  
 ![效果图1](https://github.com/Ylisen/TankGame/tree/master/images/效果图1.png)
 ![效果图2](https://github.com/Ylisen/TankGame/tree/master/images/效果图2.png)
