@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
+</head>
+
+<body>
+
+<ul>
+    <li>
+        1号用户评论
+        <div>hello,我是第1条评论 2018-03-21 12:00:00 <a href="javascript:;" class="reply_btn" >回复</a></div>
+    </li>
+    <li>
+        2号用户评论
+        <div>hello,我是第2条评论 2018-03-21 12:00:00 <a href="javascript:;" class="reply_btn" >回复</a></div>
+    </li>
+    <li>
+        3号用户评论
+        <div>hello,我是第3条评论 2018-03-21 12:00:00 <a href="javascript:;" class="reply_btn" >回复</a></div>
+    </li>
+</ul>
+    <script type="text/javascript">
+        $(function(){
+            //页面加载完毕后开始执行的事件
+            $(".reply_btn").click(function(){
+                $(".reply_textarea").remove();
+                $(this).parent().append("<div class='reply_textarea'><textarea name='' cols='40' rows='2'></textarea><br/><input type='submit' value='发表' /></div>");
+            });
+        });
+    </script>
+</body>
+</html>

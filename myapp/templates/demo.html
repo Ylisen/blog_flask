@@ -1,0 +1,44 @@
+    <div class="comment">
+	<form class="form-horizontal" action="" method="post" name="addcomment">
+	{{form.hidden_tag()}}
+	<div class="control-group">
+		<label class="control-label" for="nickname">please comment:</label>
+		<div class="controls">
+			{{ form.comment_form(maxlength = 100, class = "span5") }}
+		</div>
+	</div>
+	<div class="control-group">
+		<div class="controls">
+		    <input class="btn btn-primary" type="submit" value="Post">
+            <input  type="hidden" name="post_id" value="{{ post.id }}">
+		</div>
+	</div>
+	</form>
+    <ul class="comment-list">
+        {% for comment in post.comments %}
+            <li>
+                <div class="user-info">
+                    <img src="" alt="" class="avatar">
+                    <span class="username">{{ comment.c_user.username }}</span>
+                    <span class="create-time">time:{{ comment.time }}</span>
+                </div>
+                <p class="answer-content">{{ comment.content }}</p>
+            </li>
+            <hr>
+        {% endfor %}
+    </ul>
+
+
+    <td>
+		<form action="" method="POST" >
+		    <input class="btn" type="submit" value="delete" >
+		</form>
+    </td>
+ <input name="comment_content" type="text" class="form-control" placeholder="please comment">
+
+    <input type="hidden" name="post_id" value="{{ post.id }}">
+{{ url_for('add_comment',index=post.id) }}
+     <input name="comment_content" type="text" class="form-control" placeholder="please comment" >
+ <div class="form-group" >
+            <button class="btn btn-primary">Submit</button>
+        </div>

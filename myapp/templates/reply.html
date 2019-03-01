@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+{% include 'flash.html' %}
+<h3>please reply</h3>
+	<form class="form-horizontal" action="" method="post" name="reply">
+	{{form.hidden_tag()}}
+	<div class="control-group">
+		<label class="control-label" for="content">Reply:</label>
+        <div class="controls">
+			{{ form.content(cols = 64, rows = 4, class = "span5") }}
+		</div>
+	</div>
+	<div class="control-group">
+		<div class="controls">
+		<input class="btn btn-primary" type="submit" value="Reply">
+		</div>
+	</div>
+	</form>
+{% endblock %}

@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block content %}
+{% include 'flash.html' %}
+            <header class="post-header">
+                <h2 class="post-title">{{ post.title }}</h2>
+
+                <p  class="post-meta">
+                    <strong>
+                        <span>author:{{ post.author.username }}</span>
+                        <span>time:{{ post.time}} </span>
+                    </strong>
+                </p>
+            </header>
+
+                <div class="post-description">
+                    <p>
+                        {{ post.content }}
+                    </p>
+                </div>
+
+   <h4 style="padding-top: 10px">comment:</h4>
+    <form action="{{ url_for('add_comment',index=post.id) }}" method="post" >
+        <div class="form-group">
+            <input name="comment_content" type="text" class="form-control" placeholder="please comment" >
+
+        </div>
+
+        <div class="control-group">
+		    <div class="controls">
+		        <input class="btn btn-primary" type="submit" value="Submit">
+		    </div>
+	    </div>
+    </form>
+    <hr>
+    <ul class="comment-list">
+        {% for comment in post.comments %}
+            {% if comment.to_user %}
+                <li>
+                <div class="user-info">
+                    <img src=" " alt="" class="avatar">
+                    <span class="username"><a class="" href="">{{ comment.c_user.username }}</a></span>
+                    <span>reply to</span>
+                    <span class="username"><a class="" href="">{{ comment.to_user }}</a></span>
+                    <div>
+                        <span class="create-time">{{ comment.time }}</span>
+                        <span class="report-reply">
+                            <a class="report" href="#">report</a>
+                        </span>
+                    </div>
+                </div>
+                <p class="answer-content">{{ comment.content }}</p>
+            </li>
+            {% else %}
+            <li>
+                <div class="user-info">
+                    <img src=" " alt="" class="avatar">
+                    <span class="username"><a class="" href="">{{ comment.c_user.username }}</a></span>
+                    <span class="create-time">{{ comment.time }}</span>
+                    <span class="report-reply">
+                        <a class="report" href="#">report</a>
+                        <a class="reply_btn" href="{{ url_for('reply',index=post.id,user_name=comment.c_user.username) }}">reply</a>
+                    </span>
+                </div>
+                <p class="answer-content">{{ comment.content }}</p>
+            </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+
+{% endblock %}
