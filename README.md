@@ -21,18 +21,18 @@ Python3.x
 2. 对每条博客，添加留言评论功能，用户登陆后既可以表评论。
 
 #### 依赖包
-> click==6.7
-Flask==0.12.2
-Flask_Login==0.4.0
-Flask_SQLAlchemy==2.2
-Flask_WTF==0.14.2
-itsdangerous==0.24
-Jinja2==2.9.6
-MarkupSafe==1.0
-SQLAlchemy==1.1.14
-Werkzeug==0.12.2
-WTForms==2.1
-
+> click==6.7   
+Flask==0.12.2   
+Flask_Login==0.4.0   
+Flask_SQLAlchemy==2.2   
+Flask_WTF==0.14.2   
+itsdangerous==0.24   
+Jinja2==2.9.6    
+MarkupSafe==1.0   
+SQLAlchemy==1.1.14   
+Werkzeug==0.12.2   
+WTForms==2.1   
+   
 #### 四、文件目录
 myapp    
 ├── forms.py      
