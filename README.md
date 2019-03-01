@@ -59,9 +59,9 @@ myapp
 └── views.py   
  
 ## 四、功能演示  
-![效果图1](https://github.com/Ylisen/TankGame/tree/master/images/效果图1.png)
-![效果图2](https://github.com/Ylisen/TankGame/tree/master/images/效果图2.png)
-![效果图3](https://github.com/Ylisen/TankGame/tree/master/images/效果图3.png)
-![效果图4](https://github.com/Ylisen/TankGame/tree/master/images/效果图4.png)
-![效果图5](https://github.com/Ylisen/TankGame/tree/master/images/效果图5.png)
-![效果图6](https://github.com/Ylisen/TankGame/tree/master/images/效果图6.png)
+![效果图1](https://github.com/Ylisen/)   
+![效果图2](https://github.com/Ylisen/)   
+![效果图3](https://github.com/Ylisen/)   
+![效果图4](https://github.com/Ylisen/)   
+![效果图5](https://github.com/Ylisen/)   
+![效果图6](https://github.com/Ylisen/)   
