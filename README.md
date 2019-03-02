@@ -59,9 +59,9 @@ myapp
 └── views.py   
  
 ## 四、功能演示  
-![图0](https://github.com/Ylisen/blog_flask/tree/master/images/0.png)   
-![图1](https://github.com/Ylisen/blog_flask/tree/master/images/1.png)   
-![图2](https://github.com/Ylisen/blog_flask/tree/master/images/2.png)   
-![图3](https://github.com/Ylisen/blog_flask/tree/master/images/3.png)   
-![图4](https://github.com/Ylisen/blog_flask/tree/master/images/4.png)   
-![图5](https://github.com/Ylisen/blog_flask/tree/master/images/5.png)   
+![图0](https://github.com/Ylisen/blog_flask/tree/master/images/0.PNG)   
+![图1](https://github.com/Ylisen/blog_flask/tree/master/images/1.PNG)   
+![图2](https://github.com/Ylisen/blog_flask/tree/master/images/2.PNG)   
+![图3](https://github.com/Ylisen/blog_flask/tree/master/images/3.PNG)   
+![图4](https://github.com/Ylisen/blog_flask/tree/master/images/4.PNG)   
+  
