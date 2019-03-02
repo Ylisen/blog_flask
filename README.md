@@ -20,7 +20,7 @@ Python3.x
 1. 不需要登陆，在首页，即可查看所有用户写的博客列表(标题，时间，用户，部分内容)，点进去可看到详细内容。
 2. 对每条博客，添加留言评论功能，用户登陆后既可以表评论。
 
-#### 依赖包
+#### 四、依赖包
 > click==6.7   
 Flask==0.12.2   
 Flask_Login==0.4.0   
@@ -33,7 +33,7 @@ SQLAlchemy==1.1.14
 Werkzeug==0.12.2   
 WTForms==2.1   
    
-#### 四、文件目录
+#### 五、文件目录
 myapp    
 ├── forms.py      
 ├── init.py    
@@ -58,7 +58,7 @@ myapp
 │ └── write.html    
 └── views.py   
  
-## 四、功能演示  
+## 六、功能演示  
 ![图0](https://github.com/Ylisen/blog_flask/tree/master/images/0.PNG)   
 ![图1](https://github.com/Ylisen/blog_flask/tree/master/images/1.PNG)   
 ![图2](https://github.com/Ylisen/blog_flask/tree/master/images/2.PNG)   
