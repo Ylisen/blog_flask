@@ -1,5 +1,5 @@
 click==6.7
-Flask==0.12.2
+Flask==0.12.3
 Flask_Login==0.4.0
 Flask_SQLAlchemy==2.2
 Flask_WTF==0.14.2
